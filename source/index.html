@@ -216,17 +216,33 @@
       <span class="results-content">
         затраты на питание: 15000 руб.
       </span>
-      <div class="results-images slider">
-        <div class="results-images__container">
-          <img class="results-images-before" src="./img/fat-cat.jpg" width="280" height="232" alt="Кот Борис до использования функционального питания.">
-          <img class="results-images-after" src="./img/skinny-cat.jpg" width="243" height="232" alt="Кот Борис после использования функционального питания.">
+      <div class="results-images">
+        <h2 class="visually-hidden">
+          Визуальные изменения, после приёма корма.
+        </h2>
+        <div class="results-images__container slider">
+          <ul class="results-images__list slider__list">
+            <li class="results-images__item results-images__item--before slider-item">
+              <img class="results-images__icon" src="./img/fat-cat.jpg" width="280" height="232"
+                alt="Кот Борис до использования функционального питания.">
+            </li>
+            <li class="results-images__item results-images__item--after slider-item">
+              <img class="results-images__icon" src="./img/skinny-cat.jpg" width="243" height="232"
+                alt="Кот Борис после использования функционального питания.">
+            </li>
+          </ul>
+          <span class="results-images__before text-before">Было</span>
+          <div class="results-images__range">
+            <div class="results-images__range-scale">
+              <div class="results-images__range-bar">
+                <button class="range-toggle toggle-middle">
+                </button>
+              </div>
+            </div>
+          </div>
+          <span class="results-images__after text-after">Стало</span>
         </div>
-        <div class="slider">
-
-        </div>
-
       </div>
-
     </section>
   </main>
 
