@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body">
@@ -95,17 +96,17 @@
       <div class="main-nav__container">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--current">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">
+            <a class="site-list__link" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -115,10 +116,12 @@
   </header>
   <main class="main-container">
     <section class="service-offerings">
-      <h1 class="service-offerings__title">
-        Функциональное питание для котов
-      </h1>
-      <span class="service-offerings__text">занялся собой? займись котом!</span>
+      <div class="service-offerings__wrapper">
+        <h1 class="service-offerings__title">
+          Функциональное питание для котов
+        </h1>
+        <span class="service-offerings__text">занялся собой? займись котом!</span>
+      </div>
       <a class="service-offerings__link button" href="form.html">Подобрать программу</a>
       <div class="service-offerings__container">
         <h2 class="visually-hidden">

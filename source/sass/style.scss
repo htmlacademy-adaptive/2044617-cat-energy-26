@@ -1,1 +1,18 @@
 // Начните писать стили здесь
+@use "./fonts.scss";
+@use "./utils.scss";
+@use "./blocks/index/global.scss";
+/* header */
+@use "./blocks/header/main-header.scss";
+@use "./blocks/header/main-nav.scss";
+/* index */
+@use "./blocks/index/main-container.scss";
+@use "./blocks/index/service-offerings.scss";
+@use "./blocks/index/example.scss";
+@use "./blocks/index/discription.scss";
+@use "./blocks/index/results/results.scss";
+@use "./blocks/index/results/results-images.scss";
+/* footer */
+@use "./blocks/footer/main-footer.scss";
+@use "./blocks/footer/main-footer-attention.scss";
+@use "./blocks/footer/social.scss";
