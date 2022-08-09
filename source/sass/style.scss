@@ -23,6 +23,12 @@
 @use "./blocks/form/form__button.scss";
 /* catalog */
 @use "./blocks/catalog/main-inner.scss";
+@use "./blocks/catalog/catalog.scss";
+@use "./blocks/catalog/catalog-offers.scss";
+@use "./blocks/catalog/product-button.scss";
+@use "./blocks/catalog/catalog-offers-second.scss";
+@use "./blocks/catalog/button-details.scss";
+@use "./blocks/catalog/catalog-commercial.scss";
 /* footer */
 @use "./blocks/footer/main-footer.scss";
 @use "./blocks/footer/main-footer-attention.scss";
