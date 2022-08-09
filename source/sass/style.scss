@@ -6,12 +6,23 @@
 @use "./blocks/header/main-header.scss";
 @use "./blocks/header/main-nav.scss";
 /* index */
-@use "./blocks/index/main-container.scss";
-@use "./blocks/index/service-offerings.scss";
-@use "./blocks/index/example.scss";
-@use "./blocks/index/discription.scss";
+@use "./blocks/main-container.scss";
+@use "./blocks/index/service-offerings/service-offerings.scss";
+@use "./blocks/index/service-offerings/example.scss";
+@use "./blocks/index/service-offerings/discription.scss";
 @use "./blocks/index/results/results.scss";
 @use "./blocks/index/results/results-images.scss";
+/* form */
+@use "./blocks/form/form.scss";
+@use "./blocks/form/application.scss";
+@use "./blocks/form/control.scss";
+@use "./blocks/form/footer-form.scss";
+@use "./blocks/form/form-comment.scss";
+@use "./blocks/form/comment.scss";
+@use "./blocks/form/form-checkbox.scss";
+@use "./blocks/form/form__button.scss";
+/* catalog */
+@use "./blocks/catalog/main-inner.scss";
 /* footer */
 @use "./blocks/footer/main-footer.scss";
 @use "./blocks/footer/main-footer-attention.scss";
