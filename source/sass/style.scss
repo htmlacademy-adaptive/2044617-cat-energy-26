@@ -1,15 +1,16 @@
 // Начните писать стили здесь
 @use "./fonts.scss";
 @use "./utils.scss";
-@use "./blocks/index/global.scss";
+@use "./blocks/global.scss";
 /* header */
 @use "./blocks/header/main-header.scss";
 @use "./blocks/header/main-nav.scss";
+@use "./blocks/header/site-list.scss";
 /* index */
 @use "./blocks/main-container.scss";
-@use "./blocks/index/service-offerings/service-offerings.scss";
-@use "./blocks/index/service-offerings/example.scss";
-@use "./blocks/index/service-offerings/discription.scss";
+@use "./blocks/index/service-offerings.scss";
+@use "./blocks/index/example.scss";
+@use "./blocks/index/description.scss";
 @use "./blocks/index/results/results.scss";
 @use "./blocks/index/results/results-images.scss";
 /* form */
@@ -19,7 +20,7 @@
 @use "./blocks/form/form-comment.scss";
 @use "./blocks/form/comment.scss";
 @use "./blocks/form/form-checkbox.scss";
-@use "./blocks/form/form__button.scss";
+@use "./blocks/form/form-application.scss";
 /* catalog */
 @use "./blocks/catalog/main-inner.scss";
 @use "./blocks/catalog/catalog.scss";
