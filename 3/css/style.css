@@ -42,7 +42,7 @@ a {
 
 .page__body {
   background-color: #ffffff;
-  font-family: "Osvald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   min-height: 100%;
@@ -159,7 +159,7 @@ a {
   padding: 0;
 }
 
-.service-offerings__discription {
+.service-offerings__description {
   margin: 0;
   padding: 0;
 }
@@ -180,7 +180,7 @@ a {
   color: #000000;
 }
 
-.example__discription {
+.example__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -201,12 +201,12 @@ a {
   list-style-type: none;
 }
 
-.discription {
+.description {
   margin: 0;
   padding: 0;
 }
 
-.discription__title {
+.description__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -215,11 +215,11 @@ a {
   color: #000000;
 }
 
-.discription__list {
+.description__list {
   list-style-type: none;
 }
 
-.discription__item {
+.description__item {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -271,7 +271,7 @@ a {
   color: #000000;
 }
 
-.results__discription {
+.results__description {
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -340,6 +340,16 @@ a {
   color: #000000;
 }
 
+.form__button {
+  background-color: #68b738;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: normal;
+  color: #ffffff;
+}
+
 .application {
   margin: 0;
   padding: 0;
@@ -377,15 +387,6 @@ a {
   text-transform: uppercase;
 }
 
-.form-application__title {
-  font-family: "Oswald", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 26px;
-  font-style: normal;
-  color: #000000;
-}
-
 .control {
   margin: 0;
   padding: 0;
@@ -413,7 +414,7 @@ a {
   text-transform: uppercase;
 }
 
-.control-input::placeholder {
+.control__input::placeholder {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -465,14 +466,18 @@ a {
   color: #000000;
 }
 
-.form__button {
-  background-color: #68b738;
+.form-application {
+  margin: 0;
+  padding: 0;
+}
+
+.form-application__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 26px;
   font-style: normal;
-  color: #ffffff;
+  color: #000000;
 }
 
 .main-inner {
@@ -521,7 +526,7 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-offers__item-discription {
+.catalog-offers__item-description {
   margin: 0;
   padding: 0;
 }
@@ -598,7 +603,7 @@ a {
   color: #222222;
 }
 
-.catalog-offers-second__item-discription {
+.catalog-offers-second__item-description {
   margin: 0;
   padding: 0;
 }
