@@ -1,0 +1,36 @@
+.example {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.example__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: #444444;
+}
+
+.example__link {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  list-style-type: none;
+}

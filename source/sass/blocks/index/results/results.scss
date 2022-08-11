@@ -1,0 +1,61 @@
+.results {
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 0;
+}
+
+.results__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  font-style: normal;
+  color: #000000;
+}
+
+.results__example {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  color: #444444;
+}
+
+.results__list {
+  margin: 0;
+  padding: 0;
+}
+
+.results__item {
+  margin: 0;
+  padding: 0;
+}
+
+.results__number {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: normal;
+  color: #000000;
+}
+
+.results__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  font-style: normal;
+  color: #444444;
+}
+
+.results__content {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: normal;
+  color: #000000;
+  text-transform: uppercase;
+}

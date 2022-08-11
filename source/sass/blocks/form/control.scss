@@ -1,0 +1,35 @@
+.control {
+  margin: 0;
+  padding: 0;
+}
+
+.control__list {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.control__item {
+  margin: 0;
+  padding: 0;
+}
+
+.control__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.control__input::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  color: #000000;
+}
