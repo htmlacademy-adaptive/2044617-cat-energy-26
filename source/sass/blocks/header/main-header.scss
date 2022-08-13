@@ -1,4 +1,33 @@
+@use "viewports.scss" as v;
+
+
 .main-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: 10px 20px 18px 20px;
+  width: 280px;
+}
+
+@media (min-width: v.$tablet-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 24px 30px 62px 30px;
+    width: 768px;
+  }
+}
+
+@media (min-width: v.$desktop-width) {
+  .main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 53px 110px 0 110px;
+    width: 1440px;
+  }
 }
