@@ -5,4 +5,9 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+
+  @media (min-width: v.$desktop-width) {
+    width: 1440px;
+    box-sizing: border-box;
+  }
 }
