@@ -1,4 +1,14 @@
+@use "viewports.scss" as v;
+
 .social {
   margin: 0;
   padding: 0;
+}
+
+.social__list {
+  margin: 0;
+  padding: 20px 94px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }

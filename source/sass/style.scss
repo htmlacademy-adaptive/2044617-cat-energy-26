@@ -33,6 +33,8 @@
 @use "./blocks/catalog/catalog-commercial.scss";
 /* footer */
 @use "./blocks/footer/main-footer.scss";
+@use "./blocks/footer/main-footer__social-container.scss";
 @use "./blocks/footer/main-footer-attention.scss";
 @use "./blocks/footer/social.scss";
+@use "./blocks/footer/creators.scss";
 @use "./blocks/footer.scss";

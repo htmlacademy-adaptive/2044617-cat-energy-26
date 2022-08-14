@@ -1,0 +1,22 @@
+@use "viewports.scss" as v;
+
+.main-footer__social-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 58px 30px 55px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 58px 110px;
+  }
+}

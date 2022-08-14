@@ -1,4 +1,8 @@
+@use "viewports.scss" as v;
+
 .main-footer {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
