@@ -1,8 +1,6 @@
 .form-application {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  padding: 0;
 }
 
 .form-application__title {
@@ -12,4 +10,5 @@
   line-height: 26px;
   font-style: normal;
   color: #000000;
+  margin-bottom: 35px;
 }
