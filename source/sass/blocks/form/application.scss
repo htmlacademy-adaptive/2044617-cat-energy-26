@@ -2,13 +2,11 @@
   margin: 0;
   padding: 0;
   padding-bottom: 27px;
-}
 
-.application-second {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 24px;
-  margin-top: 26px;
+  &--second {
+    padding-bottom: 24px;
+    margin-top: 26px;
+  }
 }
 
 .application__list {

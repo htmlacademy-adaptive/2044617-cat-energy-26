@@ -8,29 +8,21 @@
   justify-content: space-between;
   margin: 0;
   padding: 10px 20px 18px 20px;
-  width: 320px;
-}
+  min-width: 320px;
+  max-width: 767px;
 
-@media (min-width: v.$tablet-width) {
-  .main-header {
-    display: flex;
-    box-sizing: border-box;
+  @media (min-width: v.$tablet-width) {
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
     padding: 24px 30px 62px 30px;
-    width: 768px;
+    min-width: 768px;
+    max-width: 1199px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    flex-direction: row;
+    padding: 53px 110px 29px 110px;
+    min-width: 1200px;
+    max-width: 1440px;
   }
 }
 
-@media (min-width: v.$desktop-width) {
-  .main-header {
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding: 53px 110px 29px 110px;
-    width: 1440px;
-  }
-}

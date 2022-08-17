@@ -1,8 +1,8 @@
+@use "viewports.scss" as v;
+
 .site-list {
   list-style-type: none;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 
 .site-list__item {
@@ -12,6 +12,18 @@
   line-height: 20px;
   font-style: normal;
   text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .site-list__link {

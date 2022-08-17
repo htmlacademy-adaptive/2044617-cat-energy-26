@@ -9,15 +9,11 @@
 
   @media (min-width: v.$tablet-width) {
     display: block;
-    padding: 45 30px 0;
-    margin: 0;
+    padding: 45px 30px 0;
   }
 
   @media (min-width: v.$desktop-width) {
-    width: 1440px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     padding: 0 110px 75px 110px;
     margin-bottom: 0;
   }
@@ -47,6 +43,7 @@
   gap: 32px;
   margin: 0;
   padding: 20px 0;
+  justify-content: center;
 }
 
 .results__item {
