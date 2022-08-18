@@ -15,10 +15,6 @@
   @media (min-width: v.$tablet-width) {
     flex-direction: row;
   }
-
-  @media (min-width: v.$desktop-width) {
-    flex-direction: row;
-  }
 }
 
 .main-nav__toggle {
@@ -27,10 +23,6 @@
   display: block;
 
   @media (min-width: v.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: v.$desktop-width) {
     display: none;
   }
 }

@@ -16,20 +16,12 @@
   @media (min-width: v.$tablet-width) {
     display: none;
   }
-
-  @media (min-width: v.$desktop-width) {
-    display: none;
-  }
 }
 
 .main-logo__text {
   display: block;
 
   @media (min-width: v.$tablet-width) {
-    display: none;
-  }
-
-  @media (min-width: v.$desktop-width) {
     display: none;
   }
 }
