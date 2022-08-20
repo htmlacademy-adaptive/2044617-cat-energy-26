@@ -1,7 +1,22 @@
+@use "viewports.scss" as v;
+
 .results {
+  padding: 25px 20px 40px 20px;
+  display: flex;
+  flex-direction: column;
   background-color: #eaeaea;
   margin: 0;
-  padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    display: block;
+    padding: 45px 30px 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    box-sizing: border-box;
+    padding: 0 110px 75px 110px;
+    margin-bottom: 0;
+  }
 }
 
 .results__title {
@@ -23,8 +38,12 @@
 }
 
 .results__list {
+  display: grid;
+  grid-template-columns: repeat(2, 124px);
+  gap: 32px;
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
+  justify-content: center;
 }
 
 .results__item {

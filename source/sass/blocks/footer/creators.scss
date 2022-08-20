@@ -1,0 +1,8 @@
+@use "viewports.scss" as v;
+
+.creators {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 22px 20px;
+}

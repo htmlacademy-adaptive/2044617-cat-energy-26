@@ -1,6 +1,19 @@
+@use "viewports.scss" as v;
+
 .main-footer-attention {
+  display: flex;
+  flex-direction: row;
   margin: 0;
-  padding: 0;
+  padding: 26px 20px;
+  justify-content: space-between;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 56px 70px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 56px 80px;
+  }
 }
 
 .main-footer-attention__title {

@@ -1,6 +1,7 @@
+@use "viewports.scss" as v;
+
 .description {
   margin: 0;
-  padding: 0;
 }
 
 .description__title {
@@ -14,6 +15,24 @@
 
 .description__list {
   list-style-type: none;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    flex-direction: row;
+    padding: 0 30px 45px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    flex-direction: row;
+    padding: 32px 110px 0 110px;
+    margin-bottom: 0;
+  }
 }
 
 .description__item {
@@ -23,4 +42,21 @@
   line-height: 18px;
   font-style: normal;
   color: #444444;
+  margin-bottom: 20px;
+
+  @media (min-width: v.$tablet-width) {
+    width: 320px; /* временно, для визуального перемещения блоков */
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 250px; /* временно, для визуального перемещения блоков */
+  }
+}
+
+.description__item:last-child {
+  margin-bottom: 0;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 37px;
+  }
 }
