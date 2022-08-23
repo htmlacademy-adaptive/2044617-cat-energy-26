@@ -1,6 +1,7 @@
 @use "viewports.scss" as v;
 
 .main-nav {
+  position: relative;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -14,15 +15,64 @@
 
   @media (min-width: v.$tablet-width) {
     flex-direction: row;
+    padding: 0;
+    margin-top: 18px;
   }
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: -41px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  background-color: #ffffff;
+  cursor: pointer;
+  border: none;
   margin: 0;
   padding: 0;
-  display: block;
+
+  &:hover,
+  &:active {
+    background-color: #624530;
+  }
 
   @media (min-width: v.$tablet-width) {
     display: none;
   }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 1.5px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+/* здесь дописать состояния для кнопки */
+
+.main-nav--opened .main-nav__toggle::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  transform: rotate(-45deg);
+}
+
+.main-nav--opened .main-nav__toggle::after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  transform: rotate(45deg);
 }
