@@ -5,6 +5,7 @@
 }
 
 .page__body {
+  position: relative;
   min-width: 280px;
   width: 100%;
   background-color: #ffffff;
@@ -28,5 +29,15 @@
   @media (min-width: v.$desktop-width) {
     min-width: 980px;
     padding: 0 110px;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 882px;
+      min-height: 696px;
+      background: url("../img/Component.jpg");
+    }
   }
 }
