@@ -11,6 +11,15 @@
   line-height: 40px;
   font-style: normal;
   color: #000000;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    flex-direction: row;
+    margin-bottom: 37px;
+  }
 }
 
 .description__list {
@@ -19,13 +28,15 @@
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 42px;
   padding: 0;
 
   @media (min-width: v.$tablet-width) {
-    flex-direction: row;
-    padding: 0 30px 45px;
-    margin-bottom: 37px;
+    display: grid;
+    grid-template-columns: repeat(2, 250px);
+    column-gap: 135px;
+    row-gap: 37px;
+    margin: 0;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -36,6 +47,7 @@
 }
 
 .description__item {
+  display: block;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -43,13 +55,23 @@
   font-style: normal;
   color: #444444;
   margin-bottom: 20px;
+  margin-left: 80px;
+  margin-right: 3px;
 
   @media (min-width: v.$tablet-width) {
-    width: 320px; /* временно, для визуального перемещения блоков */
+    br {
+      display: none;
+    }
+    width: 320px;
+    /* временно, для визуального перемещения блоков */
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
   }
 
   @media (min-width: v.$desktop-width) {
-    width: 250px; /* временно, для визуального перемещения блоков */
+    width: 250px;
+    /* временно, для визуального перемещения блоков */
   }
 }
 
@@ -57,6 +79,6 @@
   margin-bottom: 0;
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 37px;
+    margin: 0;
   }
 }

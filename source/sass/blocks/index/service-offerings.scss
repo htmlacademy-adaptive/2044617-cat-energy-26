@@ -16,14 +16,15 @@
 
   &::before {
     content: " ";
+    margin: auto;
     position: absolute;
-    left: auto;
-    right: auto;
+    left: 0;
+    right: 0;
     bottom: -135px;
     min-width: 280px;
     min-height: 270px;
-    background: transparent;
     background-image: url("../img/index-can-mobile.png");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: v.$tablet-width) {
@@ -42,7 +43,6 @@
     min-height: 314px;
     background-image: none;
     z-index: -1;
-    /* фон с котом будет сделан позже */
   }
 }
 
@@ -177,14 +177,12 @@
   margin: 0;
 
   @media (min-width: v.$tablet-width) {
-    padding: 0;
-    padding-bottom: 45px;
+    margin-bottom: 45px;
   }
 
   @media (min-width: v.$desktop-width) {
     width: 1440px;
     box-sizing: border-box;
-    padding: 0;
-    padding-bottom: 70px;
+    margin-bottom: 70px;
   }
 }

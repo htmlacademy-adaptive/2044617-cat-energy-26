@@ -12,6 +12,10 @@
     padding-left: 52px;
     padding-bottom: 53px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0;
+  }
 }
 
 .example__title {
@@ -29,6 +33,14 @@
     margin-top: 77px;
     margin-bottom: 24px;
     margin-right: auto;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: auto;
+    margin-right: 33.6%;
+    margin-bottom: 0;
   }
 }
 
@@ -47,10 +59,21 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: v.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
     box-sizing: border-box;
     max-width: 340px;
     margin-bottom: 48px;
     margin-right: auto;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-top: 73px;
+    margin-left: 52px;
+    margin-right: 52px;
+    min-width: 466px;
   }
 }
 
@@ -77,5 +100,27 @@
     background-image: url("../img/main-button-arrow.png");
     width: 24px;
     height: 12px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 auto 0 15px;
+    padding: 4px 57px 4px 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 14px;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0 auto 55px 52px;
+    padding: 4px 57px 4px 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 14px;
+    }
   }
 }
