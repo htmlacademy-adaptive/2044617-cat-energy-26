@@ -4,5 +4,23 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 22px 20px;
+  padding: 22px 0;
+}
+
+.creators__name {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: v.$tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.creators__link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
