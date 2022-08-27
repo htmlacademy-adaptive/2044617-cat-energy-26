@@ -5,6 +5,7 @@
 }
 
 .page__body {
+  box-sizing: border-box;
   position: relative;
   min-width: 280px;
   width: 100%;
@@ -34,7 +35,7 @@
       content: " ";
       position: absolute;
       top: 0;
-      right: 0;
+      left: 558px;
       min-width: 882px;
       min-height: 696px;
       background: url("../img/Component.jpg");

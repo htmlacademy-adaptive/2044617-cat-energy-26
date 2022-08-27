@@ -39,10 +39,8 @@
   }
 
   @media (min-width: v.$desktop-width) {
-    background-color: #ffffff;
-    min-height: 314px;
+    background-color: transparent;
     background-image: none;
-    z-index: -1;
   }
 }
 
@@ -177,12 +175,11 @@
   margin: 0;
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 45px;
+    padding-bottom: 45px;
   }
 
   @media (min-width: v.$desktop-width) {
-    width: 1440px;
     box-sizing: border-box;
-    margin-bottom: 70px;
+    padding-bottom: 70px;
   }
 }

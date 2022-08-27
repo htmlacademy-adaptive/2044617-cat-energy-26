@@ -1,31 +1,65 @@
 @use "viewports.scss" as v;
 
 .results {
-  padding: 25px 20px 40px 20px;
+  padding: 25px 0 40px 0;
   display: flex;
   flex-direction: column;
   background-color: #eaeaea;
   margin: 0;
 
   @media (min-width: v.$tablet-width) {
+    background-color: #ffffff;
     display: block;
-    padding: 45px 30px 0;
+    padding: 0;
+    padding-top: 45px;
+    padding-bottom: 100px;
   }
 
   @media (min-width: v.$desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #f2f2f2;
     box-sizing: border-box;
-    padding: 0 110px 75px 110px;
+    padding-top: 0;
+    padding-bottom: 75px;
     margin-bottom: 0;
   }
 }
 
+.results__information {
+  display: flex;
+  flex-direction: column;
+}
+
+.results__title-container {
+  background-color: #eaeaea;
+
+  @media (min-width: v.$tablet-width) {
+    background-color: #ffffff;
+  }
+}
+
 .results__title {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   font-style: normal;
   color: #000000;
+  margin: 0;
+  margin-right: auto;
+  padding-bottom: 40px;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-bottom: 76px;
+  }
 }
 
 .results__example {
@@ -35,6 +69,31 @@
   line-height: 18px;
   font-style: normal;
   color: #444444;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    max-width: 436px;
+    padding-top: 70px;
+  }
+}
+
+
+.results__list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (min-width: v.$tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    flex-direction: column;
+  }
 }
 
 .results__list {
@@ -44,20 +103,46 @@
   margin: 0;
   padding: 20px 0;
   justify-content: center;
+
+  @media (min-width: v.$tablet-width) {
+    grid-template-columns: repeat(2, 162px);
+    gap: 42px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    justify-content: start;
+    padding: 69px 0 55px;
+  }
 }
 
 .results__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
 
 .results__number {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 18px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   font-style: normal;
   color: #000000;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
 }
 
 .results__description {
@@ -66,10 +151,38 @@
   font-size: 12px;
   line-height: 12px;
   font-style: normal;
+  padding-left: 4px;
+  padding-right: 6px;
+  text-align: center;
   color: #444444;
+  align-items: center;
+  margin-top: -12px;
+  margin-bottom: 12px;
+  margin-left: 22px;
+  margin-right: 25px;
+  background-color: #eaeaea;
+
+  @media (min-width: v.$tablet-width) {
+    br {
+      display: none;
+    }
+
+    background-color: #ffffff;
+    font-size: 14px;
+    line-height: 14px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    margin-left: 12px;
+    margin-right: 13px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .results__content {
+  display: block;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -77,4 +190,34 @@
   font-style: normal;
   color: #000000;
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+    font-size: 20px;
+    line-height: 20px;
+
+    br {
+      display: block;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: 0;
+    justify-content: start;
+    padding-bottom: 0;
+
+    br {
+      display: none;
+    }
+  }
 }

@@ -18,6 +18,11 @@
     padding: 0;
     margin-top: 18px;
   }
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0;
+    margin-top: 16px;
+  }
 }
 
 .main-nav__toggle {

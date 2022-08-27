@@ -37,6 +37,8 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    margin-right: 32px;
+    padding-bottom: 3px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
@@ -45,4 +47,8 @@
 
 .site-list__link {
   color: #000000;
+
+  @media (min-width: v.$desktop-width) {
+    color: #ffffff;
+  }
 }
