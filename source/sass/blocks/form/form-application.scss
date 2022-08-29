@@ -1,3 +1,5 @@
+@use "viewports.scss" as v;
+
 .form-application {
   display: flex;
   flex-direction: column;
@@ -11,4 +13,14 @@
   font-style: normal;
   color: #000000;
   margin-bottom: 35px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-left: 40px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: 0;
+  }
 }

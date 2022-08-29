@@ -13,7 +13,18 @@
   line-height: 36px;
   font-style: normal;
   color: #000000;
-  padding: 0 20px;
+  padding: 27px 20px 37px 0;
+  margin: 0;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 2px 235px 54px 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 45px 787px 56px 0;
+  }
 }
 
 .main-container__form {

@@ -1,7 +1,19 @@
+@use "viewports.scss" as v;
+
 .form-comment {
+  border: none;
   margin: 0;
   padding: 0;
   margin-bottom: 23px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-top: 69px;
+    margin-bottom: 67px;
+  }
 }
 
 .form-comment__title {
@@ -12,4 +24,15 @@
   font-style: normal;
   color: #000000;
   margin-bottom: 38px;
+
+  @media (min-width: v.$tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: 0;
+  }
 }

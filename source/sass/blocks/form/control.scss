@@ -14,15 +14,18 @@
   padding: 0;
 
   @media (min-width: v.$tablet-width) {
-    flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  &--second {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 .control__item {
-  margin: 0;
+  margin: 0 auto 13px 0;
   padding: 0;
-  margin-right: 122px;
 }
 
 .control__title {

@@ -1,5 +1,26 @@
+@use "viewports.scss" as v;
+
 .comment {
   font-family: inherit;
+}
+
+.comment__input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 12px 9px 15px;
+  margin: 0;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: v.$tablet-width) {
+    width: calc(100% - 80px);
+    margin-left: 40px;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 
 .comment__input::placeholder {
@@ -10,4 +31,9 @@
   font-style: normal;
   color: #444444;
   text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

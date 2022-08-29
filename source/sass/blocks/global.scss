@@ -30,7 +30,13 @@
   @media (min-width: v.$desktop-width) {
     min-width: 980px;
     padding: 0 110px;
+  }
+}
 
+.body {
+  /* для того чтобы не ругался stylelint*/
+
+  @media (min-width: v.$desktop-width) {
     &::before {
       content: " ";
       position: absolute;

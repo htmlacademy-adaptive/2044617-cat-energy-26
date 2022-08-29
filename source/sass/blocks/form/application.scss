@@ -1,11 +1,33 @@
+@use "viewports.scss" as v;
+
 .application {
   margin: 0;
   padding: 0;
-  padding-bottom: 27px;
+  padding-bottom: 24px;
+  border: none;
+
+  @media (min-width: v.$tablet-width) {
+    padding-bottom: 72px;
+    padding-right: 40px;
+
+    @media (min-width: v.$desktop-width) {
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+  }
 
   &--second {
-    padding-bottom: 24px;
+    display: flex;
     margin-top: 26px;
+
+    @media (min-width: v.$tablet-width) {
+      margin-top: 71px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 
@@ -14,14 +36,40 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    padding-left: 40px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-left: 0;
+  }
 }
 
 .application__item {
+  display: flex;
   margin: 0;
+  margin-bottom: 14px;
   padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  /* @media (min-width: v.$desktop-width) {
+
+  } */
 }
 
 .application__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 13px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -29,6 +77,21 @@
   font-style: normal;
   color: #444444;
   text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-right: 16px;
+  }
+}
+
+.application__input {
+  margin: 0;
+  display: flex;
+  /* min-width: 172px; */
+  width: 100%;
+  padding: 10px 40px 10px 20px;
+  border: 1px solid #e7e7e7;
 }
 
 .application__input::placeholder {
@@ -39,4 +102,9 @@
   font-style: normal;
   color: #444444;
   text-transform: uppercase;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
