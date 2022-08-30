@@ -1,0 +1,23 @@
+@use "viewports.scss" as v;
+
+.show-more {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+}
+
+.show-more__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 78px;
+}
+
+.show-more__text {
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
