@@ -14,4 +14,17 @@
   margin-top: 13px;
   text-transform: uppercase;
   border: none;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 10px 93px;
+    margin-top: 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 10px 53px;
+  }
+}
+
+.product-button__second {
+  padding: 7px 90px;
 }

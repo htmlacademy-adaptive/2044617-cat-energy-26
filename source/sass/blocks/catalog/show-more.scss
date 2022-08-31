@@ -8,6 +8,25 @@
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
   text-align: center;
+  background-image: url("../img/show-more-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 25px;
+
+  @media (min-width: v.$tablet-width) {
+    padding-bottom: 39px;
+    padding-left: 38px;
+    padding-right: 37px;
+    background-image: url("../img/show-more-tablet.svg");
+    background-position: 50% 52px;
+    background-color: #ffffff;
+    border: 2px solid #f2f2f2;
+    justify-content: end;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
 }
 
 .show-more__title {
@@ -18,6 +37,13 @@
 
 .show-more__text {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 23px;
+  margin-left: 39px;
+  margin-right: 39px;
   padding: 0;
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
