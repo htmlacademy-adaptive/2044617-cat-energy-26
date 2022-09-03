@@ -8,8 +8,15 @@
 
 .service-offerings__index-wrapper {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-width: 708px;
+    padding-left: 90px;
+  }
 
   @media (min-width: v.$desktop-width) {
     background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%);
@@ -23,7 +30,7 @@
       top: -141px;
       right: 0;
       min-width: 720px;
-      height: 633px;
+      height: 694px;
       background-image: url("../img/index-background-cat-desktop .jpg");
       background-repeat: no-repeat;
       background-position: right;
@@ -31,8 +38,8 @@
   }
 }
 
-
 .service-offerings__wrapper {
+  margin: 0;
   position: relative;
   background-color: rgba(104, 183, 56, 0.85);
   min-height: 302px;
@@ -58,21 +65,42 @@
     background-color: #ffffff;
     min-height: 200px;
     background-image: none;
-    margin-left: 90px;
 
     &::before {
-      display: none;
+      content: " ";
+      position: absolute;
+      left: -141px;
+      top: 529px;
+      min-width: 709px;
+      min-height: 609px;
+      background-image: url("../img/index-can-tablet.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: -1;
     }
   }
 
   @media (min-width: v.$desktop-width) {
     background-color: transparent;
     background-image: none;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      left: 140px;
+      top: 70px;
+      min-width: 552px;
+      min-height: 499px;
+      background-image: url("../img/index-can-desktop.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 0;
+    }
   }
 }
 
 .service-offerings__title {
-  margin: 0;
+  margin: 0 auto;
   padding-top: 27px;
   margin-bottom: 25px;
   font-family: "Oswald", sans-serif;
@@ -92,6 +120,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    padding-top: 111px;
     margin-bottom: 40px;
   }
 }
@@ -139,7 +168,7 @@
     padding: 14px 26px;
     min-width: 244px;
     width: 244px;
-    margin-left: 90px;
+    margin-left: 0;
     margin-right: auto;
   }
 
@@ -165,16 +194,6 @@
     padding-bottom: 45px;
     grid-template-columns: repeat(1, 700px);
     gap: 30px;
-
-    &::before {
-      content: " ";
-      position: absolute;
-      top: -609px;
-      min-width: 709px;
-      min-height: 609px;
-      background-image: url("../img/index-can-tablet.png");
-      z-index: -1;
-    }
   }
 
   @media (min-width: v.$desktop-width) {
@@ -201,10 +220,12 @@
   margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
+    width: 768px;
     padding-bottom: 45px;
   }
 
   @media (min-width: v.$desktop-width) {
+    width: 1440px;
     box-sizing: border-box;
     padding-bottom: 70px;
   }

@@ -6,6 +6,11 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 22px 20px;
+
+  @media (min-width: v.$tablet-width) {
+    min-width: 163px;
+    padding: 0;
+  }
 }
 
 .creators__name {
