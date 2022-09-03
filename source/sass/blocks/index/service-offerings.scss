@@ -6,6 +6,32 @@
   padding: 0;
 }
 
+.service-offerings__index-wrapper {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: v.$desktop-width) {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%);
+    padding-bottom: 185px;
+
+    &::before {
+      content: " ";
+      z-index: -1;
+      margin: auto;
+      position: absolute;
+      top: -141px;
+      right: 0;
+      min-width: 720px;
+      height: 633px;
+      background-image: url("../img/index-background-cat-desktop .jpg");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+  }
+}
+
+
 .service-offerings__wrapper {
   position: relative;
   background-color: rgba(104, 183, 56, 0.85);
@@ -24,6 +50,7 @@
     min-width: 280px;
     min-height: 270px;
     background-image: url("../img/index-can-mobile.png");
+    background-position: center;
     background-repeat: no-repeat;
   }
 
@@ -89,6 +116,7 @@
 }
 
 .service-offerings__link {
+  max-width: 280px;
   box-sizing: border-box;
   margin-top: 138px;
   padding: 7px 44px;
@@ -117,7 +145,7 @@
 
   @media (min-width: v.$desktop-width) {
     margin-top: 52px;
-    margin-bottom: 185px;
+    margin-bottom: 0;
   }
 }
 
@@ -168,11 +196,9 @@
 }
 
 .service-offerings__description {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  padding-bottom: 49px;
-  margin: 0;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
 
   @media (min-width: v.$tablet-width) {
     padding-bottom: 45px;

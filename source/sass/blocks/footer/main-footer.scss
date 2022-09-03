@@ -4,8 +4,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
   padding: 0;
+  margin: 0;
 
   @media (min-width: v.$desktop-width) {
     box-sizing: border-box;
@@ -13,8 +13,7 @@
 }
 
 .main-footer__map {
-  margin-left: -20px;
-  margin-right: -20px;
+  width: 100%;
   min-width: 320px;
   min-height: 362px;
   display: block;
@@ -55,12 +54,15 @@
 }
 
 .main-footer__logo-text {
+  min-width: 280px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   margin-top: 39px;
   border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 32px;
 
   @media (min-width: v.$tablet-width) {
     margin-top: 0;

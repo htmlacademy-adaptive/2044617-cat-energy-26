@@ -1,0 +1,15 @@
+@use "viewports.scss" as v;
+
+.main-align {
+  margin: 0 auto;
+  width: 320px;
+  box-sizing: border-box;
+
+  @media (min-width: v.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 1440px;
+  }
+}

@@ -1,10 +1,11 @@
 @use "viewports.scss" as v;
 
 .main-footer-attention {
+  max-width: 280px;
   display: flex;
   flex-direction: row;
-  margin: 0;
-  padding: 26px 0;
+  margin: 0 auto;
+  padding: 26px 20px;
   justify-content: space-between;
 
   @media (min-width: v.$tablet-width) {
@@ -21,8 +22,8 @@
 }
 
 .main-footer-attention__title {
-  display: block;
-  padding-right: 4px;
+  display: inline-block;
+  width: 139px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -42,7 +43,7 @@
 }
 
 .main-footer-attention__content {
-  display: block;
+  display: inline-block;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
