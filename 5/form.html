@@ -11,7 +11,7 @@
 
 <body class="page__body">
   <!-- Header -->
-  <header class="main-header">
+  <header class="main-header main-align">
     <div class="main-logo">
       <a class="main-logo__link" href="index.html">
         <svg class="main-logo__mobile" width="34" height="38" viewBox="0 0 34 38" fill="none"
@@ -269,7 +269,7 @@
         <span class="visually-hidden">Интернет-магазин Cat-Energy</span>
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -295,7 +295,7 @@
     </nav>
   </header>
   <!-- Main -->
-  <main class="main-container">
+  <main class="main-container main-align">
     <h1 class="main-container__title">
       Подбор программы
     </h1>
@@ -352,8 +352,8 @@
       <fieldset class="form-application application application--second">
         <legend class="form-application__title">Контактные данные
           (владельца кота)</legend>
-        <ul class="application__list">
-          <li class="application__item">
+        <ul class="application__list application__list--second">
+          <li class="application__item application__item--scecond">
             <label class="application__label" for="email">E&#8209;mail:*</label>
             <input class="application__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
               required>
