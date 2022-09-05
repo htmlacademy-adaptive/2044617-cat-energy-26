@@ -38,7 +38,7 @@
   padding: 0;
 
   @media (min-width: v.$tablet-width) {
-    padding-left: 40px;
+    padding-left: 50px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -77,18 +77,23 @@
   font-style: normal;
   color: #444444;
   text-transform: uppercase;
+  padding-left: 20px;
 
   @media (min-width: v.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
     margin-right: 16px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding-left: 110px;
+  }
 }
 
 .application__input {
   margin: 0;
   display: flex;
-  /* min-width: 172px; */
+  font-family: "Oswald", sans-serif;
   width: 100%;
   padding: 10px 40px 10px 20px;
   border: 1px solid #e7e7e7;

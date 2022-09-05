@@ -1,10 +1,5 @@
 @use "viewports.scss" as v;
 
-/* .form__container {
-  margin: 0;
-  padding: 0;
-} */
-
 .form__text {
   display: block;
   font-family: "Oswald", sans-serif;
@@ -17,17 +12,19 @@
   margin: 0;
   padding: 0;
   padding-bottom: 39px;
+  padding-left: 20px;
 
   @media (min-width: v.$tablet-width) {
     font-size: 20px;
     line-height: 30px;
     padding-right: 345px;
-    margin-left: 40px;
+    padding-left: 70px;
     padding-bottom: 66px;
   }
 
   @media (min-width: v.$desktop-width) {
     margin-left: 0;
+    padding-left: 110px;
   }
 }
 

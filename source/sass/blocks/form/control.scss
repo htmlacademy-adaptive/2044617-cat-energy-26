@@ -19,7 +19,21 @@
 
   &--second {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: v.$tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 221px);
+      column-gap: 123px;
+      row-gap: 32px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(4, 221px);
+      gap: 104px;
+    }
   }
 }
 
