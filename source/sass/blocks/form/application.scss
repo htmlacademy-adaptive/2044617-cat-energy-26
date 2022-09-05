@@ -44,6 +44,15 @@
   @media (min-width: v.$desktop-width) {
     padding-left: 0;
   }
+
+  &--second {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: v.$desktop-width) {
+      flex-direction: row;
+    }
+  }
 }
 
 .application__item {
@@ -60,9 +69,15 @@
     margin-bottom: 20px;
   }
 
-  /* @media (min-width: v.$desktop-width) {
+  @media (min-width: v.$desktop-width) {
+    width: 572px;
+  }
 
-  } */
+  &--second {
+    @media (min-width: v.$desktop-width) {
+      width: 572px;
+    }
+  }
 }
 
 .application__label {
