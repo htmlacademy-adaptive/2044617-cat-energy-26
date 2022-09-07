@@ -9,10 +9,10 @@
 </head>
 
 <body class="page__body body">
-  <header class="main-header main-header--index main-align">
+  <header class="main-header main-align">
     <div class="main-logo">
       <a class="main-logo__link" href="index.html">
-        <svg class="main-logo__mobile width=" 34" height="38" viewBox="0 0 34 38" fill="none"
+        <svg class="main-logo__mobile width="34" height="38" viewBox="0 0 34 38" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_153_267)">
             <path
@@ -358,70 +358,72 @@
         </ul>
       </div>
     </section>
-    <section class="results main-align">
-      <div class="results__information">
-        <div class="results__title-container">
-          <h2 class="results__title">
-            Живой пример
-          </h2>
-        </div>
-        <span class="results__example">
-          Борис сбросил 5 кг за 2 месяца, просто
-          заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих
-          тренировок! При этом он не менял своих
-          привычек и по&#8209;прежнему спит по 16 часов
-          в день.
-        </span>
-        <div class="results__list-container">
-          <dl class="results__list">
-            <div class="results__item">
-              <dt class="results__number">
-                5 кг
-              </dt>
-              <dd class="results__description">
-                снижение <br> веса
-              </dd>
-            </div>
-            <div class="results__item">
-              <dt class="results__number">
-                60 дней
-              </dt>
-              <dd class="results__description">
-                затрачено времени
-              </dd>
-            </div>
-          </dl>
-          <span class="results__content">
-            затраты на питание: <br>15000 руб.
+    <section class="results">
+      <div class="results__container main-align">
+        <div class="results__information">
+          <div class="results__title-container">
+            <h2 class="results__title">
+              Живой пример
+            </h2>
+          </div>
+          <span class="results__example">
+            Борис сбросил 5 кг за 2 месяца, просто
+            заменив свой обычный корм на Cat Energy
+            Slim. Отличный результат без изнуряющих
+            тренировок! При этом он не менял своих
+            привычек и по&#8209;прежнему спит по 16 часов
+            в день.
           </span>
+          <div class="results__list-container">
+            <dl class="results__list">
+              <div class="results__item">
+                <dt class="results__number">
+                  5 кг
+                </dt>
+                <dd class="results__description">
+                  снижение <br> веса
+                </dd>
+              </div>
+              <div class="results__item">
+                <dt class="results__number">
+                  60 дней
+                </dt>
+                <dd class="results__description">
+                  затрачено времени
+                </dd>
+              </div>
+            </dl>
+            <span class="results__content">
+              затраты на питание: <br>15000 руб.
+            </span>
+          </div>
         </div>
-      </div>
-      <div class="results-images">
-        <h2 class="visually-hidden">
-          Визуальные изменения, после приёма корма.
-        </h2>
-        <div class="results-images__container slider">
-          <ul class="results-images__list slider__list">
-            <li class="results-images__item results-images__item--before slider__item">
-              <img class="results-images__icon" src="./img/fat-cat.jpg" width="280" height="232"
-                alt="Кот Борис до использования функционального питания.">
-            </li>
-            <li class="results-images__item results-images__item--after slider__item">
-              <img class="results-images__icon" src="./img/skinny-cat.jpg" width="243" height="232"
-                alt="Кот Борис после использования функционального питания.">
-            </li>
-          </ul>
-          <span class="results-images__before text-before">Было</span>
-          <div class="results-images__range">
-            <div class="results-images__range-scale">
-              <div class="results-images__range-bar">
-                <button class="range-toggle toggle-middle">
-                </button>
+        <div class="results-images">
+          <h2 class="visually-hidden">
+            Визуальные изменения, после приёма корма.
+          </h2>
+          <div class="results-images__container slider">
+            <ul class="results-images__list slider__list">
+              <li class="results-images__item results-images__item--before slider__item">
+                <img class="results-images__icon" src="./img/fat-cat.jpg" width="280" height="232"
+                  alt="Кот Борис до использования функционального питания.">
+              </li>
+              <li class="results-images__item results-images__item--after slider__item">
+                <img class="results-images__icon" src="./img/skinny-cat.jpg" width="243" height="232"
+                  alt="Кот Борис после использования функционального питания.">
+              </li>
+            </ul>
+            <span class="results-images__before text-before">Было</span>
+            <div class="results-images__range">
+              <div class="results-images__range-scale">
+                <div class="results-images__range-bar">
+                  <button class="range-toggle toggle-middle">
+                  </button>
+                </div>
               </div>
             </div>
+            <span class="results-images__after text-after">Стало</span>
           </div>
-          <span class="results-images__after text-after">Стало</span>
         </div>
       </div>
     </section>
@@ -447,7 +449,7 @@
       </h2>
       <iframe class="main-footer__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6282422443985!2d30.321953057451548!3d59.93831071573775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661624320801!5m2!1sru!2sru"
-        style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         allowfullscreen
       </iframe>
     </section>
