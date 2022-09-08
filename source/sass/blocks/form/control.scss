@@ -14,15 +14,32 @@
   padding: 0;
 
   @media (min-width: v.$tablet-width) {
-    flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  &--second {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: v.$tablet-width) {
+      display: grid;
+      grid-template-columns: repeat(2, 221px);
+      column-gap: 123px;
+      row-gap: 32px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      display: grid;
+      grid-template-columns: repeat(4, 221px);
+      gap: 104px;
+    }
   }
 }
 
 .control__item {
-  margin: 0;
+  margin: 0 auto 13px 0;
   padding: 0;
-  margin-right: 122px;
 }
 
 .control__title {

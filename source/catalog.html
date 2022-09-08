@@ -267,7 +267,7 @@
         <span class="visually-hidden">Интернет-магазин Cat-Energy</span>
       </a>
     </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -304,7 +304,7 @@
         <ul class="catalog-offers__list">
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Pro 500 г
+              Cat Energy Pro <br>500 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -317,7 +317,7 @@
                 вкус
               </dt>
               <dd class="catalog-offers__item-value">
-                курица
+                Курица
               </dd>
               <dt class="catalog-offers__item-characteristics">
                 цена
@@ -332,7 +332,7 @@
           </li>
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Pro 1000 г
+              Cat Energy Pro <br>1000 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -345,7 +345,7 @@
                 вкус
               </dt>
               <dd class="catalog-offers__item-value">
-                курица
+                Курица
               </dd>
               <dt class="catalog-offers__item-characteristics">
                 цена
@@ -360,7 +360,7 @@
           </li>
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Pro 500 г
+              Cat Energy Pro <br>500 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -373,7 +373,7 @@
                 вкус
               </dt>
               <dd class="catalog-offers__item-value">
-                рыба
+                Рыба
               </dd>
               <dt class="catalog-offers__item-characteristics">
                 цена
@@ -388,7 +388,7 @@
           </li>
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Pro 1000 г
+              Cat Energy Pro <br>1000 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -401,7 +401,7 @@
                 вкус
               </dt>
               <dd class="catalog-offers__item-value">
-                рыба
+                Рыба
               </dd>
               <dt class="catalog-offers__item-characteristics">
                 цена
@@ -416,7 +416,7 @@
           </li>
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Slim 500 г
+              Cat Energy Slim <br>500 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -444,7 +444,7 @@
           </li>
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Slim 1000 г
+              Cat Energy Slim <br>1000 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -472,7 +472,7 @@
           </li>
           <li class="catalog-offers__item">
             <h3 class="catalog-offers__item-title">
-              Cat Energy Slim 500 г
+              Cat Energy Slim <br>500 г
             </h3>
             <dl class="catalog-offers__item-description">
               <dt class="catalog-offers__item-characteristics">
@@ -498,93 +498,102 @@
               заказать
             </button>
           </li>
-          <li class="catalog-offers__item">
-            <h3 class="catalog-offers__item-title">
-              Показать еще 100500 товаров
+          <li class="catalog-offers__item show-more">
+            <!-- Немного непонятно, будет ли это противоречить БЭМ, или сразу делать отдельным классом самостоятельным -->
+            <h3 class="catalog-offers__item-title show-more__title">
+              Показать еще 100500&nbsp;товаров
             </h3>
-            <span class="catalog-offers__item-text">
+            <span class="catalog-offers__item-text show-more__text">
               На самом деле вкусов гораздо больше!
             </span>
             <button class="button button-details">
-              Показать все
+              Показать&nbsp;все
             </button>
           </li>
         </ul>
       </div>
       <div class="catalog-offers-second">
         <h2 class="catalog-offers-second__title">
-          дополнительные товары
+          Дополнительные товары
         </h2>
         <div class="catalog-offers-second__wrapper">
           <ul class="catalog-offers-second__list">
             <li class="catalog-offers-second__item">
-              <h3 class="catalog-offers-second__item-title">
-                Сахарозаменитель
-              </h3>
-              <dl class="catalog-offers-second__item-description">
-                <dt class="catalog-offers-second__item-characteristics">
-                  1 упаковка (100 г)
-                </dt>
-                <dd class="catalog-offers-second__item-value">
-                  200 р.
-                </dd>
-              </dl>
-              <button class="button product-button">
+              <div class="catalog-offers-second__container">
+                <h3 class="catalog-offers-second__item-title">
+                  Сахарозаменитель
+                </h3>
+                <dl class="catalog-offers-second__item-description">
+                  <dt class="catalog-offers-second__item-characteristics">
+                    1 упаковка (100 г)
+                  </dt>
+                  <dd class="catalog-offers-second__item-value">
+                    200 р.
+                  </dd>
+                </dl>
+              </div>
+              <button class="product-button product-button--second">
                 заказать
               </button>
             </li>
             <li class="catalog-offers-second__item">
-              <h3 class="catalog-offers-second__item-title">
-                Питьевая вода
-              </h3>
-              <dl class="catalog-offers-second__item-description">
-                <dt class="catalog-offers-second__item-characteristics">
-                  5 литров
-                </dt>
-                <dd class="catalog-offers-second__item-value">
-                  50 р.
-                </dd>
-              </dl>
-              <button class="button product-button">
+              <div class="catalog-offers-second__container">
+                <h3 class="catalog-offers-second__item-title">
+                  Питьевая вода
+                </h3>
+                <dl class="catalog-offers-second__item-description">
+                  <dt class="catalog-offers-second__item-characteristics">
+                    5 литров
+                  </dt>
+                  <dd class="catalog-offers-second__item-value">
+                    50 р.
+                  </dd>
+                </dl>
+              </div>
+              <button class="product-button product-button--second">
                 заказать
               </button>
             </li>
             <li class="catalog-offers-second__item">
-              <h3 class="catalog-offers-second__item-title">
-                молоко
-              </h3>
-              <dl class="catalog-offers-second__item-description">
-                <dt class="catalog-offers-second__item-characteristics">
-                  1 литр
-                </dt>
-                <dd class="catalog-offers-second__item-value">
-                  100 р.
-                </dd>
-              </dl>
-              <button class="button product-button">
+              <div class="catalog-offers-second__container">
+                <h3 class="catalog-offers-second__item-title">
+                  молоко
+                </h3>
+                <dl class="catalog-offers-second__item-description">
+                  <dt class="catalog-offers-second__item-characteristics">
+                    1 литр
+                  </dt>
+                  <dd class="catalog-offers-second__item-value">
+                    100 р.
+                  </dd>
+                </dl>
+              </div>
+              <button class="product-button product-button--second">
                 заказать
               </button>
             </li>
             <li class="catalog-offers-second__item">
-              <h3 class="catalog-offers-second__item-title">
-                Витамины
-              </h3>
-              <dl class="catalog-offers-second__item-description">
-                <dt class="catalog-offers-second__item-characteristics">
-                  1 упаковка (30 г)
-                </dt>
-                <dd class="catalog-offers-second__item-value">
-                  300 р.
-                </dd>
-              </dl>
-              <button class="button product-button">
+              <div class="catalog-offers-second__container">
+                <h3 class="catalog-offers-second__item-title">
+                  Витамины
+                </h3>
+                <dl class="catalog-offers-second__item-description">
+                  <dt class="catalog-offers-second__item-characteristics">
+                    1 упаковка (30 г)
+                  </dt>
+                  <dd class="catalog-offers-second__item-value">
+                    300 р.
+                  </dd>
+                </dl>
+              </div>
+              <button class="product-button product-button--second">
                 заказать
               </button>
             </li>
           </ul>
           <div class="catalog-offers-second__commercial">
             <p class="catalog-offers-second__commercial-content">
-              Закажите все и получите чехол для кота в подарок!
+              Закажите все<br> и получите чехол для кота в подарок!
             </p>
           </div>
         </div>
@@ -603,11 +612,18 @@
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </span>
     </div>
-    <span class="visually-hidden">
-      Карта с местоположением пункта-выдачи интернет-магазина.
-    </span>
+    <section>
+      <h2 class="visually-hidden">
+        Карта с местоположением пункта-выдачи интернет-магазина.
+      </h2>
+      <iframe class="main-footer__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6282422443985!2d30.321953057451548!3d59.93831071573775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1661624320801!5m2!1sru!2sru"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen
+      </iframe>
+    </section>
     <section class="main-footer__social-container ">
-      <a class="main-logo-text" href="index.html">
+      <a class="main-footer__logo-text" href="index.html">
         <svg width="128" height="24" viewBox="0 0 128 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_135_3260)">
             <path
@@ -660,7 +676,8 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="">
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M17.8509 10.7927L12.6145 7.30184C12.5159 7.23691 12.4016 7.19985 12.2837 7.19459C12.1657 7.18934 12.0486 7.21608 11.9446 7.27198C11.8406 7.32789 11.7537 7.41087 11.693 7.51215C11.6324 7.61343 11.6002 7.72924 11.6 7.84729V14.8291C11.6001 14.9481 11.6327 15.0648 11.6942 15.1667C11.7557 15.2686 11.8438 15.3518 11.9491 15.4073C12.0524 15.4631 12.1691 15.4895 12.2864 15.4837C12.4037 15.478 12.5172 15.4402 12.6145 15.3746L17.8509 11.8837C17.9409 11.8239 18.0148 11.7429 18.0658 11.6477C18.1169 11.5526 18.1436 11.4462 18.1436 11.3382C18.1436 11.2302 18.1169 11.1239 18.0658 11.0287C18.0148 10.9335 17.9409 10.8525 17.8509 10.7927ZM12.9091 13.6073V9.06911L16.3127 11.3382L12.9091 13.6073ZM25.3891 5.04366C25.2942 4.67547 25.1131 4.33511 24.8609 4.05061C24.6086 3.76611 24.2924 3.54561 23.9382 3.40729C20.2182 1.9782 14.2509 2.00002 14 2.00002C13.7491 2.00002 7.78182 1.9782 4.06182 3.40729C3.70764 3.54561 3.3914 3.76611 3.13914 4.05061C2.88689 4.33511 2.70584 4.67547 2.61091 5.04366C2.32727 6.11275 2 8.07638 2 11.3382C2 14.6 2.32727 16.5637 2.61091 17.6327C2.70584 18.0009 2.88689 18.3413 3.13914 18.6258C3.3914 18.9103 3.70764 19.1308 4.06182 19.2691C7.78182 20.6982 13.7491 20.6764 14 20.6764H14.0764C14.8291 20.6764 20.3927 20.6327 23.9382 19.2691C24.2924 19.1308 24.6086 18.9103 24.8609 18.6258C25.1131 18.3413 25.2942 18.0009 25.3891 17.6327C25.6727 16.5637 26 14.6 26 11.3382C26 8.07638 25.6727 6.11275 25.3891 5.04366ZM24.1236 17.3055C24.0807 17.472 23.999 17.6259 23.8853 17.7548C23.7715 17.8838 23.6289 17.984 23.4691 18.0473C19.9782 19.3891 14.0655 19.3673 14 19.3673C13.9345 19.3673 8.02182 19.3891 4.53091 18.0473C4.37107 17.984 4.22846 17.8838 4.11471 17.7548C4.00096 17.6259 3.91929 17.472 3.87636 17.3055C3.61455 16.3018 3.30909 14.4582 3.30909 11.3382C3.30909 8.2182 3.61455 6.37457 3.87636 5.37093C3.91929 5.20445 4.00096 5.05047 4.11471 4.92156C4.22846 4.79264 4.37107 4.69243 4.53091 4.62911C8.02182 3.28729 13.9345 3.30911 14 3.30911C14.0655 3.30911 19.9782 3.28729 23.4691 4.62911C23.6289 4.69243 23.7715 4.79264 23.8853 4.92156C23.999 5.05047 24.0807 5.20445 24.1236 5.37093C24.3855 6.37457 24.6909 8.2182 24.6909 11.3382C24.6909 14.4582 24.3855 16.3018 24.1236 17.3055Z"
                   fill="#666666" />
@@ -670,7 +687,8 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="">
-              <svg width="28" height="22" viewBox="0 0 28 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="social__icon" width="28" height="22" viewBox="0 0 28 22" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M23.4608 3.15291C23.6393 3.30222 23.7255 3.5349 23.6872 3.76448L21.0611 19.5214C21.0244 19.7411 20.8789 19.9273 20.6745 20.0159C20.47 20.1045 20.2346 20.0833 20.0493 19.9597L12.1708 14.7074C12.0177 14.6054 11.9145 14.4437 11.8862 14.2619C11.858 14.08 11.9074 13.8947 12.0223 13.751L14.633 10.4877L10.273 13.3944C10.077 13.525 9.82597 13.5407 9.61524 13.4353L4.36293 10.8092C4.12769 10.6915 3.98535 10.4449 4.0012 10.1824C4.01705 9.91983 4.18804 9.6921 4.43573 9.60364L22.8188 3.03826C23.038 2.95998 23.2822 3.00359 23.4608 3.15291ZM6.32626 10.3228L9.86168 12.0905L17.4231 7.0495C17.6925 6.86994 18.0525 6.91349 18.2712 7.1521C18.49 7.3907 18.5022 7.75314 18.3 8.00591L13.495 14.0121L19.9328 18.3039L22.2083 4.65058L6.32626 10.3228Z"
                   fill="#666666" />

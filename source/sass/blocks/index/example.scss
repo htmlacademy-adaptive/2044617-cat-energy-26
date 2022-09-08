@@ -1,10 +1,25 @@
+@use "viewports.scss" as v;
+
 .example {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 52px;
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0;
+  }
 }
 
 .example__title {
+  margin: 30px auto 30px 91px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -12,18 +27,60 @@
   font-style: normal;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0;
+    margin-top: 77px;
+    margin-bottom: 24px;
+    margin-right: auto;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-left: auto;
+    margin-right: 33.6%;
+    margin-bottom: 0;
+  }
 }
 
 .example__description {
+  margin: 0;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-right: 13px;
+  padding-bottom: 23px;
   font-family: "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   font-style: normal;
   color: #444444;
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    max-width: 340px;
+    margin-bottom: 48px;
+    margin-right: auto;
+    border-bottom: none;
+    padding: 0;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin-top: 73px;
+    margin-left: 52px;
+    margin-right: 52px;
+    min-width: 466px;
+  }
 }
 
 .example__link {
+  position: relative;
+  margin: 15px 127px 18px 19px;
+  padding: 4px 47px 4px 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -33,4 +90,37 @@
   color: #000000;
   text-decoration: none;
   list-style-type: none;
+
+  &::after {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    content: " ";
+    background-repeat: no-repeat;
+    background-image: url("../img/main-button-arrow.png");
+    width: 24px;
+    height: 12px;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    margin: 0 auto 0 15px;
+    padding: 4px 57px 4px 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 14px;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    margin: 0 auto 55px 52px;
+    padding: 4px 57px 4px 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::after {
+      top: 14px;
+    }
+  }
 }

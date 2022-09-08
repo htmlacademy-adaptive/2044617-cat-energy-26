@@ -1,4 +1,8 @@
+@use "viewports.scss" as v;
+
 .button-details {
+  grid-row: 3/4;
+  grid-column: 1/3;
   background-color: #f2f2f2;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -7,4 +11,11 @@
   font-style: normal;
   text-transform: uppercase;
   color: #444444;
+  border: none;
+  padding: 10px 79px;
+  margin-top: 87px;
+
+  @media (min-width: v.$desktop-width) {
+    padding: 10px 39px;
+  }
 }

@@ -1,8 +1,32 @@
 @use "viewports.scss" as v;
 
 .creators {
+  min-width: 280px;
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin: 0 auto;
   padding: 22px 20px;
+
+  @media (min-width: v.$tablet-width) {
+    min-width: 163px;
+    padding: 0;
+  }
+}
+
+.creators__name {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: v.$tablet-width) {
+    margin-right: 22px;
+  }
+}
+
+.creators__link {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }

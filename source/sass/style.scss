@@ -3,6 +3,8 @@
 @use "./utils.scss";
 @use "./blocks/global.scss";
 @use "./viewports.scss";
+/* центровщик */
+@use "./blocks/main-align.scss";
 /* header */
 @use "./blocks/header/main-header.scss";
 @use "./blocks/header/main-nav.scss";
@@ -32,9 +34,11 @@
 @use "./blocks/catalog/product-button.scss";
 @use "./blocks/catalog/catalog-offers-second.scss";
 @use "./blocks/catalog/button-details.scss";
+@use "./blocks/catalog/show-more.scss";
 /* footer */
 @use "./blocks/footer/main-footer.scss";
 @use "./blocks/footer/main-footer-attention.scss";
 @use "./blocks/footer/social.scss";
 @use "./blocks/footer/creators.scss";
 @use "./blocks/footer.scss";
+@use "./blocks/footer/social-align.scss";
