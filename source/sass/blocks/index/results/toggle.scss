@@ -1,0 +1,17 @@
+@use "viewports.scss" as v;
+
+.toggle__mobile {
+  display: block;
+
+  @media (min-width: v.$tablet-width) {
+    display: none;
+  }
+}
+
+.toggle__tablet {
+  display: none;
+
+  @media (min-width: v.$tablet-width) {
+    display: block;
+  }
+}
