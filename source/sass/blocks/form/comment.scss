@@ -4,6 +4,20 @@
   font-family: inherit;
 }
 
+.comment__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: v.$tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 1220px;
+  }
+}
+
 .comment__input {
   box-sizing: border-box;
   width: 100%;
@@ -12,8 +26,7 @@
   border: 1px solid #e7e7e7;
 
   @media (min-width: v.$tablet-width) {
-    width: calc(100% - 80px);
-    margin-left: 40px;
+    width: 100%;
     padding: 10px 20px;
   }
 

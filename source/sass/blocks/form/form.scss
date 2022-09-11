@@ -1,5 +1,19 @@
 @use "viewports.scss" as v;
 
+.form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: v.$tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 1440px;
+  }
+}
+
 .form__text {
   display: block;
   font-family: "Oswald", sans-serif;
@@ -36,7 +50,8 @@
 
   @media (min-width: v.$desktop-width) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 568px);
     gap: 80px;
+    margin: 0 auto;
   }
 }

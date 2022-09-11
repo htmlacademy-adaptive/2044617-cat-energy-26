@@ -7,7 +7,9 @@
   padding: 0;
 }
 
-.main-inner__title {
+.main-inner__container-title {
+  width: 320px;
+  box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -21,6 +23,7 @@
   margin: 0;
 
   @media (min-width: v.$tablet-width) {
+    width: 768px;
     font-size: 60px;
     line-height: 60px;
     padding: 0;
@@ -30,6 +33,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    width: 1440px;
     padding-left: 110px;
     margin-top: 45px;
     margin-bottom: 84px;
