@@ -5,6 +5,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml"><!-- 32×32 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -310,7 +314,7 @@
         <!-- application -->
         <div class="form-application application">
           <h2 class="visually-hidden">Данные о коте</h2>
-          <ul class="application__list">
+          <ul class="application__list application__list-container">
             <li class="application__item">
               <label class="application__label" for="name">Имя:*</label>
               <input class="application__input" type="text" id="name" name="name" placeholder="Барсик" required>
@@ -353,18 +357,18 @@
         </div>
       </div>
       <!-- application -->
-      <div class="form-application application--second">
+      <div class="form-application applications application--second">
         <div class="form-application__container">
           <h2 class="form-application__container-title">Контактные данные
             (владельца кота)</h2>
         </div>
-        <ul class="application__list application__list--second application__list-container">
-          <li class="application__item application__item--scecond">
+        <ul class="application__list application__list--second application__list-container application__list-container--second">
+          <li class="application__item application__item--second">
             <label class="application__label" for="email">E&#8209;mail:*</label>
             <input class="application__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com"
               required>
           </li>
-          <li class="application__item">
+          <li class="application__item application__item--second">
             <label class="application__label" for="tel">Телефон:*</label>
             <input class="application__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </li>
