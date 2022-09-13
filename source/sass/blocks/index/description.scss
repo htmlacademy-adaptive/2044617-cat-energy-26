@@ -73,7 +73,9 @@
   font-style: normal;
   color: #444444;
   margin-bottom: 20px;
-  margin-left: 80px;
+  padding-left: 80px;
+  padding-top: 3px;
+  padding-right: 3px;
 
   @media (min-width: v.$tablet-width) {
     br {
@@ -84,12 +86,54 @@
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    margin-top: 151px;
+    padding-top: 111px;
+    margin-top: 40px;
     margin-bottom: 57px;
+    padding-left: 0;
   }
 
   @media (min-width: v.$desktop-width) {
     /* резерв */
+  }
+
+  &--first {
+    background-image: url("../img/program-work-picture1-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: v.$tablet-width) {
+      background-image: url("../img/program-work-picture1-tablet.png");
+    }
+  }
+
+  &--second {
+    background-image: url("../img/program-work-picture2-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: v.$tablet-width) {
+      background-image: url("../img/program-work-picture2-tablet.png");
+    }
+  }
+
+  &--third {
+    background-image: url("../img/program-work-picture3-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: v.$tablet-width) {
+      background-image: url("../img/program-work-picture3-tablet.png");
+    }
+  }
+
+  &--fourth {
+    background-image: url("../img/program-work-picture4-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    @media (min-width: v.$tablet-width) {
+      background-image: url("../img/program-work-picture4-tablet.png");
+    }
   }
 }
 

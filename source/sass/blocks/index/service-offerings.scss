@@ -6,6 +6,16 @@
   padding: 0;
 }
 
+.service-offerings__index-container {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 62.9%, #ffffff 62.9%, #ffffff 100%), url("../img/index-background-cat-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @media (min-width: v.$tablet-width) {
+    background: none;
+  }
+}
+
 .service-offerings__index-wrapper {
   position: relative;
   margin: 0 auto;
@@ -27,9 +37,7 @@
 .service-offerings__wrapper {
   margin: 0;
   position: relative;
-  background-color: rgba(104, 183, 56, 0.85);
   min-height: 302px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../img/index-background-cat-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 
@@ -56,7 +64,7 @@
       content: " ";
       position: absolute;
       left: -141px;
-      top: 529px;
+      top: 736px;
       min-width: 709px;
       min-height: 609px;
       background-image: url("../img/index-can-tablet.png");

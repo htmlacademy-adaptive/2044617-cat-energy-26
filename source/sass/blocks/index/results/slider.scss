@@ -1,0 +1,20 @@
+@use "viewports.scss" as v;
+
+.slider {
+  padding: 0;
+}
+
+.slider__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  inset: 0;
+
+  &--before {
+    clip-path: inset(0 50% 0 0);
+  }
+
+  &--after {
+    clip-path: inset(0 0 0 50%);
+  }
+}

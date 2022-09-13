@@ -16,6 +16,38 @@
   @media (min-width: v.$desktop-width) {
     padding: 0;
   }
+
+  &--first {
+    background-image: url("../img/decorate-cat-slim-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 22px 21px;
+
+    @media (min-width: v.$tablet-width) {
+      background-image: url("../img/decorate-cat-slim-tablet.png");
+      background-position: 446px 81px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      background-image: url("../img/decorate-cat-slim-desktop.png");
+      background-position: 52px 41px;
+    }
+  }
+
+  &--second {
+    background-image: url("../img/decorate-cat-beefy-mobile.png");
+    background-repeat: no-repeat;
+    background-position: 13px 24px;
+
+    @media (min-width: v.$tablet-width) {
+      background-image: url("../img/decorate-cat-beefy-tablet.png");
+      background-position: 412px 91px;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      background-image: url("../img/decorate-cat-beefy-desktop.png");
+      background-position: 33px 47px;
+    }
+  }
 }
 
 .example__title {
@@ -64,6 +96,7 @@
     box-sizing: border-box;
     max-width: 340px;
     margin-bottom: 48px;
+    margin-left: 0;
     margin-right: auto;
     border-bottom: none;
     padding: 0;
@@ -103,7 +136,7 @@
   }
 
   @media (min-width: v.$tablet-width) {
-    margin: 0 auto 0 15px;
+    margin: 0 auto 0 0;
     padding: 4px 57px 4px 0;
     font-size: 20px;
     line-height: 30px;

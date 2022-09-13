@@ -1,12 +1,13 @@
 @use "viewports.scss" as v;
 
 .catalog-offers-second {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-top: 25px;
   justify-content: center;
 
@@ -22,26 +23,72 @@
   }
 }
 
-.catalog-offers-second__title {
+.catalog-offers-second__section {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 320px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 50%;
+    background-color: #68b738;
+    top: 38px;
+    right: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: v.$tablet-width) {
+    width: 768px;
+
+    &::before {
+      width: 100%;
+      top: 92px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    width: 1220px;
+
+    &::before {
+      top: 99px;
+      right: 0;
+      z-index: -1;
+    }
+  }
+}
+
+.catalog-offers-second__section-title {
+  width: 268px;
   margin: 0;
-  margin-right: auto;
   margin-bottom: 36px;
+  margin-right: auto;
   padding: 0;
+  padding-left: 20px;
+  padding-right: 22px;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   font-style: normal;
   color: #000000;
+  box-sizing: border-box;
+  background-color: #ffffff;
 
   @media (min-width: v.$tablet-width) {
+    width: 420px;
     margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
     margin-left: 37px;
+    padding-left: 40px;
+    padding-right: 36px;
 
     @media (min-width: v.$desktop-width) {
-      margin-left: 0;
+      margin-left: -40px;
     }
   }
 }
@@ -72,6 +119,7 @@
 }
 
 .catalog-offers-second__item {
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -198,7 +246,7 @@
 .catalog-offers-second__wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   @media (min-width: v.$desktop-width) {
@@ -207,6 +255,7 @@
 }
 
 .catalog-offers-second__commercial {
+  width: 280px;
   display: flex;
   align-items: flex-end;
   box-sizing: border-box;
@@ -215,18 +264,20 @@
   background-color: rgba(104, 183, 56, 0.85);
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../img/cat-price.jpg");
   background-repeat: no-repeat;
-  margin: 35px 0;
+  margin: 35px auto;
   padding: 0;
 
   @media (min-width: v.$tablet-width) {
+    width: 708px;
     background-size: 708px auto;
     background-position-y: 58%;
     min-height: 200px;
-    margin: 69px 0 76px 0;
+    margin: 69px auto 76px auto;
     padding: 0;
   }
 
   @media (min-width: v.$desktop-width) {
+    width: 280px;
     background-size: 280px auto;
     min-height: 289px;
     margin: 0 0 0 79px;
