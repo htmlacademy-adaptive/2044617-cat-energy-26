@@ -109,6 +109,8 @@
   }
 
   &--second {
+    position: relative;
+
     @media (min-width: v.$desktop-width) {
       width: 569px;
 
@@ -165,4 +167,16 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.application__icon-mail {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+}
+
+.application__icon-phone {
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }
