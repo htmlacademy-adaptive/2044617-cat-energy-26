@@ -12,7 +12,7 @@
   justify-content: center;
 
   @media (min-width: v.$tablet-width) {
-    padding-top: 69px;
+    padding-top: 66px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -44,7 +44,7 @@
 
     &::before {
       width: 100%;
-      top: 92px;
+      top: 88px;
       right: 0;
       z-index: -1;
     }
@@ -84,11 +84,12 @@
     font-size: 36px;
     line-height: 36px;
     margin-left: 37px;
-    padding-left: 40px;
+    padding-left: 30px;
     padding-right: 36px;
 
     @media (min-width: v.$desktop-width) {
       margin-left: -40px;
+      padding-left: 40px;
     }
   }
 }
@@ -149,10 +150,10 @@
 
   @media (min-width: v.$desktop-width) {
     flex-direction: row;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 17px;
+    padding-bottom: 15px;
   }
 }
 
@@ -207,6 +208,7 @@
   padding: 0;
 
   @media (min-width: v.$desktop-width) {
+    align-items: center;
     width: 288px;
   }
 }
@@ -277,7 +279,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
-    width: 280px;
+    width: 245px;
     background-size: 280px auto;
     min-height: 289px;
     margin: 0 0 0 79px;
@@ -310,6 +312,8 @@
 
   @media (min-width: v.$desktop-width) {
     box-sizing: border-box;
-    padding: 185px 40px 40px 40px;
+    padding: 185px 40px 43px 40px;
+    text-align: center;
+    background-position: 85px 25%;
   }
 }

@@ -44,6 +44,7 @@
 
   @media (min-width: v.$desktop-width) {
     min-width: 1440px;
+    padding-bottom: 53px;
   }
 }
 
@@ -59,7 +60,7 @@
   }
 
   @media (min-width: v.$desktop-width) {
-    padding: 58px 0;
+    padding: 58px;
   }
 }
 
