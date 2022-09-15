@@ -13,6 +13,11 @@
   @media (min-width: v.$tablet-width) {
     border-bottom: none;
   }
+
+  @media (min-width: v.$desktop-width) {
+    border-bottom: none;
+    padding: 0 153px 0 179px;
+  }
 }
 
 .social__list {
@@ -28,7 +33,7 @@
   margin-right: 24px;
 
   @media (min-width: v.$desktop-width) {
-    margin-right: 27px;
+    margin-right: 26px;
   }
 }
 

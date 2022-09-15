@@ -18,8 +18,9 @@
     position: absolute;
     background-color: #ffffff;
     left: 110px;
-    top: 95px;
+    top: 91px;
     padding: 56px 80px;
+    min-width: 565px;
   }
 }
 
@@ -52,7 +53,8 @@
   line-height: 20px;
   font-style: normal;
   color: #444444;
-  text-align: end;
+  text-align: start;
+  padding-left: 18px;
 
   p {
     margin: 0;
@@ -65,9 +67,21 @@
     max-width: 160px;
     font-size: 16px;
     line-height: 20px;
+    text-align: end;
 
     p {
       margin-top: 20px;
+    }
+  }
+
+  @media (min-width: v.$desktop-width) {
+    text-align: start;
+    padding-left: 24px;
+
+    p {
+      text-align: start;
+      margin-right: 29px;
+      margin-top: 16px;
     }
   }
 }

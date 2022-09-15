@@ -39,6 +39,7 @@
   @media (min-width: v.$tablet-width) {
     display: flex;
     min-width: 768px;
+    padding-top: 49px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -73,10 +74,16 @@
   margin-bottom: 32px;
 
   @media (min-width: v.$tablet-width) {
-    width: 163px;
+    margin-bottom: 0;
+    width: 128px;
     margin-top: 0;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-right: 25px;
     border: none;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-right: 0;
   }
 }

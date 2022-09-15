@@ -9,8 +9,9 @@
   }
 
   @media (min-width: v.$desktop-width) {
-    background: linear-gradient(#ffffff 0%, #ffffff 22%, #f2f2f2 22%, #f2f2f2 100%);
+    background: linear-gradient(#ffffff 0%, #ffffff 26.4%, #f2f2f2 26.4%, #f2f2f2 100%);
     border-top: none;
+    margin-top: 37px;
   }
 }
 
@@ -18,7 +19,7 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  padding: 25px 20px 40px 20px;
+  padding: 30px 20px 40px 20px;
 
   @media (min-width: v.$tablet-width) {
     display: block;
@@ -71,6 +72,7 @@
 
   @media (min-width: v.$tablet-width) {
     margin: 0 auto;
+    margin-top: 40px;
     width: 708px;
     font-size: 60px;
     line-height: 60px;
@@ -78,8 +80,9 @@
   }
 
   @media (min-width: v.$desktop-width) {
-    padding-bottom: 76px;
-    padding-left: 110px;
+    padding-bottom: 0;
+    padding-left: 105px;
+    margin-top: 34px;
   }
 }
 
@@ -92,14 +95,15 @@
   color: #444444;
 
   @media (min-width: v.$tablet-width) {
+    margin-top: 30px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: v.$desktop-width) {
     max-width: 436px;
-    padding-top: 70px;
-    padding-left: 110px;
+    margin-top: 147px;
+    padding-left: 104px;
   }
 }
 
@@ -110,11 +114,13 @@
   flex-wrap: wrap;
 
   @media (min-width: v.$tablet-width) {
+    margin-top: 34px;
     flex-direction: row;
   }
 
   @media (min-width: v.$desktop-width) {
     flex-direction: column;
+    margin-top: 0;
   }
 }
 
@@ -123,7 +129,7 @@
   grid-template-columns: repeat(2, 124px);
   gap: 32px;
   margin: 0;
-  padding: 20px 0;
+  padding: 20px 0 8px;
   justify-content: center;
 
   @media (min-width: v.$tablet-width) {
@@ -133,7 +139,7 @@
 
   @media (min-width: v.$desktop-width) {
     justify-content: start;
-    padding: 69px 0 55px 110px;
+    padding: 69px 0 41px 105px;
   }
 }
 
@@ -158,12 +164,17 @@
   color: #000000;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  text-transform: uppercase;
 
   @media (min-width: v.$tablet-width) {
     font-size: 30px;
     line-height: 37px;
     padding-top: 15px;
     padding-bottom: 20px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding-top: 12px;
   }
 }
 
@@ -226,7 +237,9 @@
     justify-content: center;
     text-align: end;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
+    padding-top: 15px;
+    padding-right: 2px;
 
     br {
       display: block;
@@ -237,10 +250,18 @@
     margin-left: 0;
     justify-content: start;
     padding-bottom: 0;
-    padding-left: 110px;
+    padding-top: 0;
+    padding-left: 103px;
+    line-height: 31px;
 
     br {
       display: none;
     }
+  }
+}
+
+.results__content-price {
+  @media (min-width: v.$desktop-width) {
+    padding-left: 67px;
   }
 }
