@@ -240,6 +240,7 @@
     line-height: 29px;
     padding-top: 15px;
     padding-right: 2px;
+    flex-direction: column;
 
     br {
       display: block;
@@ -253,6 +254,7 @@
     padding-top: 0;
     padding-left: 103px;
     line-height: 31px;
+    flex-direction: row;
 
     br {
       display: none;
@@ -261,6 +263,10 @@
 }
 
 .results__content-price {
+  @media (min-width: v.$tablet-width) {
+    padding-left: 82px;
+  }
+
   @media (min-width: v.$desktop-width) {
     padding-left: 67px;
   }

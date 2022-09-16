@@ -9,11 +9,13 @@
 
   @media (min-width: v.$tablet-width) {
     flex-direction: row;
-    margin-bottom: 32px;
+    margin-bottom: 75px;
+    padding-left: 71px;
   }
 
   @media (min-width: v.$desktop-width) {
     padding-left: 110px;
+    margin-top: 42px;
   }
 }
 
@@ -26,18 +28,18 @@
   color: #000000;
   text-align: center;
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 37px;
 
   @media (min-width: v.$tablet-width) {
-    margin-bottom: 0;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: auto 60px;
+    font-size: 16px;
   }
 
   @media (min-width: v.$desktop-width) {
     display: block;
     margin: auto;
     margin-left: 80px;
+    margin-bottom: 32px;
   }
 }
 
@@ -50,7 +52,7 @@
   font-style: normal;
   color: #ffffff;
   width: 100%;
-  padding: 7px 44px;
+  padding: 11px 44px;
   text-transform: uppercase;
   border: none;
   margin-bottom: 21px;
@@ -59,9 +61,9 @@
     font-size: 20px;
     line-height: 0px;
     min-width: 282px;
-    padding: 13px 45px;
+    padding: 26px 45px;
     margin-bottom: 0;
-    margin-left: 40px;
+    max-width: 282px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -70,8 +72,9 @@
     line-height: 0px;
     min-width: 282px;
     padding: 13px 168px;
-    margin-bottom: 0;
+    margin-bottom: 14px;
     margin-left: 0;
     min-height: 52px;
+    max-width: 568px;
   }
 }

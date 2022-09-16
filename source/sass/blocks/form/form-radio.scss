@@ -10,4 +10,8 @@
     border: none;
     padding: 0 70px;
   }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 0;
+  }
 }

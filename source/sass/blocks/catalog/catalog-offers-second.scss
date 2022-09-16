@@ -266,7 +266,7 @@
   background-color: rgba(104, 183, 56, 0.85);
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../img/cat-price.jpg");
   background-repeat: no-repeat;
-  margin: 35px auto;
+  margin: 40px auto;
   padding: 0;
 
   @media (min-width: v.$tablet-width) {
@@ -274,7 +274,7 @@
     background-size: 708px auto;
     background-position-y: 58%;
     min-height: 200px;
-    margin: 69px auto 76px auto;
+    margin: 56px auto 76px auto;
     padding: 0;
   }
 

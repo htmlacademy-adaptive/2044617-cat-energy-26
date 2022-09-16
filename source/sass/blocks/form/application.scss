@@ -33,7 +33,7 @@
       height: 2px;
       width: 50%;
       background-color: #68b738;
-      top: 38px;
+      top: 15px;
       right: 0;
       z-index: -1;
     }
@@ -43,6 +43,7 @@
 
       &::before {
         width: 100%;
+        top: 20px;
       }
     }
 
@@ -112,6 +113,7 @@
     position: relative;
 
     @media (min-width: v.$desktop-width) {
+      margin-bottom: 0;
       width: 569px;
 
       &:nth-child(2n+2) {
@@ -150,8 +152,16 @@
   display: flex;
   font-family: "Oswald", sans-serif;
   width: 100%;
-  padding: 10px 40px 10px 20px;
+  padding: 10px 40px 15px 13px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 14px 40px 16px 21px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 15px 40px 16px 19px;
+  }
 }
 
 .application__input::placeholder {
