@@ -5,13 +5,13 @@
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding: 22px 20px;
+  padding: 26px 20px;
   justify-content: space-between;
 
   @media (min-width: v.$tablet-width) {
     box-sizing: border-box;
     min-width: 768px;
-    padding: 56px 70px;
+    padding: 60px 70px;
   }
 
   @media (min-width: v.$desktop-width) {
@@ -54,7 +54,7 @@
   font-style: normal;
   color: #444444;
   text-align: start;
-  padding-left: 29px;
+  padding-left: 17px;
 
   p {
     margin: 0;

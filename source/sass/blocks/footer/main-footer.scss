@@ -39,7 +39,9 @@
   @media (min-width: v.$tablet-width) {
     display: flex;
     min-width: 768px;
-    padding-top: 49px;
+    padding-top: 41px;
+    padding-bottom: 43px;
+    min-height: 147px;
   }
 
   @media (min-width: v.$desktop-width) {

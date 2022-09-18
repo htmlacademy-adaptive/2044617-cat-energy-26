@@ -12,12 +12,12 @@
 
   @media (min-width: v.$tablet-width) {
     border-bottom: none;
+    border-top: none;
   }
 
   @media (min-width: v.$desktop-width) {
     border-bottom: none;
-    border-top: none;
-    padding: 0 153px 0 179px;
+    padding: 0 158px 0 186px;
   }
 }
 

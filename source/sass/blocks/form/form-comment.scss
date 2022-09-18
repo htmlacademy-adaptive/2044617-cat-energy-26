@@ -30,6 +30,11 @@
     margin-top: 65px;
     margin-bottom: 67px;
     padding-left: 20px;
+
+    &::before {
+      width: 100%;
+      top: 22px;
+    }
   }
 }
 
@@ -55,6 +60,7 @@
   font-style: normal;
   color: #000000;
   margin-bottom: 38px;
+  margin-top: 22px;
 
   @media (min-width: v.$tablet-width) {
     width: 184px;

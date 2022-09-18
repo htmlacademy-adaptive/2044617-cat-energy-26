@@ -19,7 +19,7 @@
     margin-top: 18px;
   }
 
-  @media (min-width: v.$tablet-width) {
+  @media (min-width: v.$desktop-width) {
     margin: 0;
     margin-top: 16px;
     padding-right: 3px;
@@ -104,8 +104,4 @@
 
 .main-nav--opened .main-nav__toggle:active::after {
   background-color: rgba(0, 0, 0, 0.3);
-}
-
-.main-nav--nojs .main-nav__toggle {
-  display: none;
 }
