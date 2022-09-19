@@ -3,7 +3,7 @@
 .application {
   padding: 0;
   padding-right: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 20px;
   padding-left: 20px;
   border: none;
 
@@ -33,7 +33,7 @@
       height: 2px;
       width: 50%;
       background-color: #68b738;
-      top: 38px;
+      top: 15px;
       right: 0;
       z-index: -1;
     }
@@ -43,6 +43,7 @@
 
       &::before {
         width: 100%;
+        top: 20px;
       }
     }
 
@@ -109,7 +110,10 @@
   }
 
   &--second {
+    position: relative;
+
     @media (min-width: v.$desktop-width) {
+      margin-bottom: 0;
       width: 569px;
 
       &:nth-child(2n+2) {
@@ -148,8 +152,16 @@
   display: flex;
   font-family: "Oswald", sans-serif;
   width: 100%;
-  padding: 10px 40px 10px 20px;
+  padding: 12px 40px 12px 16px;
   border: 1px solid #e7e7e7;
+
+  @media (min-width: v.$tablet-width) {
+    padding: 14px 40px 16px 21px;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    padding: 15px 40px 16px 19px;
+  }
 }
 
 .application__input::placeholder {
@@ -165,4 +177,16 @@
     font-size: 20px;
     line-height: 30px;
   }
+}
+
+.application__icon-mail {
+  position: absolute;
+  right: 17px;
+  top: 18px;
+}
+
+.application__icon-phone {
+  position: absolute;
+  right: 13px;
+  top: 13px;
 }

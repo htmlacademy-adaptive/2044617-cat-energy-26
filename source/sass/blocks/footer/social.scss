@@ -12,6 +12,12 @@
 
   @media (min-width: v.$tablet-width) {
     border-bottom: none;
+    border-top: none;
+  }
+
+  @media (min-width: v.$desktop-width) {
+    border-bottom: none;
+    padding: 0 158px 0 186px;
   }
 }
 
@@ -28,7 +34,7 @@
   margin-right: 24px;
 
   @media (min-width: v.$desktop-width) {
-    margin-right: 27px;
+    margin-right: 26px;
   }
 }
 

@@ -13,10 +13,12 @@
 
   @media (min-width: v.$tablet-width) {
     width: 628px;
+    margin-bottom: 41px;
   }
 
   @media (min-width: v.$desktop-width) {
     width: 1220px;
+    margin-bottom: 38px;
   }
 }
 
@@ -31,6 +33,7 @@
   font-style: normal;
   color: #000000;
   margin-bottom: 35px;
+  margin-top: 0;
 
   @media (min-width: v.$tablet-width) {
     width: 515px;

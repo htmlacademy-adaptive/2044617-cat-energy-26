@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 22px 20px;
+  padding: 20px 20px;
 
   @media (min-width: v.$tablet-width) {
     min-width: 163px;
@@ -14,6 +14,7 @@
 }
 
 .creators__name {
+  font-family: "Arial", sans-serif;
   display: flex;
   text-align: center;
   align-items: center;

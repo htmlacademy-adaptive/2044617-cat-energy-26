@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding-left: 52px;
+    padding-left: 49px;
     padding-bottom: 53px;
   }
 
@@ -24,7 +24,7 @@
 
     @media (min-width: v.$tablet-width) {
       background-image: url("../img/decorate-cat-slim-tablet.png");
-      background-position: 446px 81px;
+      background-position: 442px 81px;
     }
 
     @media (min-width: v.$desktop-width) {
@@ -40,12 +40,23 @@
 
     @media (min-width: v.$tablet-width) {
       background-image: url("../img/decorate-cat-beefy-tablet.png");
-      background-position: 412px 91px;
+      background-position: 408px 91px;
     }
 
     @media (min-width: v.$desktop-width) {
       background-image: url("../img/decorate-cat-beefy-desktop.png");
       background-position: 33px 47px;
+    }
+  }
+
+  &--second .example__title {
+    @media (min-width: v.$tablet-width) {
+      margin-left: 0;
+    }
+
+    @media (min-width: v.$desktop-width) {
+      margin-left: 215px;
+      margin-right: auto;
     }
   }
 }
@@ -106,13 +117,14 @@
     margin-top: 73px;
     margin-left: 52px;
     margin-right: 52px;
+    margin-bottom: 21px;
     min-width: 466px;
   }
 }
 
 .example__link {
   position: relative;
-  margin: 15px 127px 18px 19px;
+  margin: 14px 127px 18px 19px;
   padding: 4px 47px 4px 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;

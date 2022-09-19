@@ -63,7 +63,7 @@
     margin-top: 0;
     display: flex;
     flex-direction: column;
-    padding: 8px 36px 39px 39px;
+    padding: 0 36px 39px 39px;
     min-height: 511px;
   }
 
@@ -88,7 +88,7 @@
   margin: 0;
   padding: 0;
   padding-right: 65px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   grid-row: 1/2;
   grid-column: 2/3;
   font-family: "Oswald", sans-serif;
@@ -108,10 +108,10 @@
     line-height: 24px;
     padding: 0;
     margin: 0;
-    margin-bottom: 21px;
-    margin-left: 36px;
+    margin-bottom: 12px;
+    margin-left: 42px;
     margin-right: 42px;
-    margin-top: 34px;
+    margin-top: 31px;
     text-align: center;
 
     br {
@@ -120,8 +120,10 @@
   }
 
   @media (min-width: v.$desktop-width) {
+    margin-bottom: 14px;
+    margin-top: 30px;
     margin-left: 15px;
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -156,7 +158,8 @@
 
   @media (min-width: v.$tablet-width) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
+    padding: 7px 0 9px;
   }
 }
 
@@ -176,7 +179,8 @@
 
   @media (min-width: v.$tablet-width) {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 16px;
+    padding: 7px 0 9px;
   }
 }
 

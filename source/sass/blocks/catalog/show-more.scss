@@ -11,11 +11,13 @@
   background-position: 50% 25px;
 
   @media (min-width: v.$tablet-width) {
+    margin-top: 82px;
+    min-height: 429px;
     padding-bottom: 39px;
     padding-left: 38px;
     padding-right: 37px;
     background-image: url("../img/show-more-tablet.svg");
-    background-position: 50% 52px;
+    background-position: 50% 48px;
     background-color: #ffffff;
     border: 2px solid #f2f2f2;
     justify-content: end;
@@ -35,10 +37,12 @@
 
 .show-more__text {
   margin: 0;
-  margin-top: 23px;
-  margin-left: 39px;
-  margin-right: 39px;
+  margin-top: 9px;
   padding: 0;
+
+  @media (min-width: v.$tablet-width) {
+    margin-top: 20px;
+  }
 
   @media (min-width: v.$desktop-width) {
     margin-left: 0;
