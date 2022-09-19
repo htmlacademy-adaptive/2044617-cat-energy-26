@@ -90,3 +90,13 @@
     padding-right: 0;
   }
 }
+
+.main-footer__logo-text:hover svg,
+.main-footer__logo-text:focus svg {
+  opacity: 0.8;
+}
+
+.main-footer__logo-text:active svg {
+  opacity: 0.6;
+}
+

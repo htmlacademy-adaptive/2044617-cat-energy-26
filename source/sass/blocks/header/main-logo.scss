@@ -20,6 +20,36 @@
   display: flex;
 }
 
+.main-logo__link:hover .main-logo__mobile,
+.main-logo__link:focus .main-logo__mobile,
+.main-logo__link:hover .main-logo__text,
+.main-logo__link:focus .main-logo__text {
+  opacity: 0.8;
+}
+
+.main-logo__link:active .main-logo__mobile,
+.main-logo__link:active .main-logo__text {
+  opacity: 0.6;
+}
+
+.main-logo__link:hover .main-logo__tablet,
+.main-logo__link:focus .main-logo__tablet {
+  opacity: 0.8;
+}
+
+.main-logo__link:active .main-logo__tablet {
+  opacity: 0.6;
+}
+
+.main-logo__link:hover .main-logo__desktop,
+.main-logo__link:focus .main-logo__desktop {
+  opacity: 0.8;
+}
+
+.main-logo__link:active .main-logo__desktop {
+  opacity: 0.6;
+}
+
 .main-logo__mobile {
   display: block;
   padding-top: 0;

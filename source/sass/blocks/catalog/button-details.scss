@@ -23,3 +23,13 @@
     padding: 10px 39px;
   }
 }
+
+.button-details:hover,
+.button-details:focus {
+  background-color: #ebebeb;
+}
+
+.button-details:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
+}

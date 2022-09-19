@@ -141,10 +141,6 @@
     line-height: 30px;
     margin-right: 16px;
   }
-
-  @media (min-width: v.$desktop-width) {
-    /*     padding-left: 110px; */
-  }
 }
 
 .application__input {
@@ -153,7 +149,7 @@
   font-family: "Oswald", sans-serif;
   width: 100%;
   padding: 12px 40px 12px 16px;
-  border: 1px solid #e7e7e7;
+  outline: 1px solid #e7e7e7;
 
   @media (min-width: v.$tablet-width) {
     padding: 14px 40px 16px 21px;
@@ -179,14 +175,51 @@
   }
 }
 
+.application__input:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.application__input:focus {
+  outline: 2px solid #444444;
+}
+
+.application__input:invalid {
+  border: none;
+  outline: 2px solid #ff8282;
+}
+
 .application__icon-mail {
   position: absolute;
   right: 17px;
   top: 18px;
 }
 
+/* .application__input:focus + .application__icon-mail {
+  color: #68b738;
+} */
+
+/* .application__input:invalid + .application__icon-mail {
+  color: #ff8282;
+} */
+
 .application__icon-phone {
   position: absolute;
   right: 13px;
   top: 13px;
+}
+
+input:focus + .application__icon-mail > * {
+  color: rgba(104, 183, 56, 1);
+}
+
+input:invalid + .application__icon-mail > * {
+  color: #ff8282;
+}
+
+input:focus + .application__icon-phone > * {
+  stroke: rgba(104, 183, 56, 1);
+}
+
+input:invalid + .application__icon-phone > * {
+  stroke: #ff8282;
 }

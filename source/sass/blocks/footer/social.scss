@@ -53,3 +53,12 @@
   align-items: center;
   text-align: center;
 }
+
+.social__link:hover .social__icon,
+.social__link:focus .social__icon {
+  color: #68b738;
+}
+
+.social__link:active .social__icon {
+  color: rgba(104, 183, 56, 0.3);
+}

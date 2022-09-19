@@ -140,6 +140,14 @@
   }
 }
 
+.control__input[type="checkbox"]:disabled + .control__mark-checkbox + .control__title {
+  opacity: 0.3;
+}
+
+.control__input[type="radio"]:disabled + .control__mark-radio + .control__title {
+  opacity: 0.3;
+}
+
 .control__title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
