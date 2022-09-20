@@ -208,18 +208,18 @@
   top: 13px;
 }
 
-input:focus + .application__icon-mail > * {
+.application__input + .application__icon-mail > * {
   color: rgba(104, 183, 56, 1);
 }
 
-input:invalid + .application__icon-mail > * {
+.application__input:invalid + .application__icon-mail > * {
   color: #ff8282;
 }
 
-input:focus + .application__icon-phone > * {
+.application__input:focus + .application__icon-phone > * {
   stroke: rgba(104, 183, 56, 1);
 }
 
-input:invalid + .application__icon-phone > * {
+.application__input:invalid + .application__icon-phone > * {
   stroke: #ff8282;
 }
