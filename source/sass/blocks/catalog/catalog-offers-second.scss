@@ -273,6 +273,10 @@
   margin: 33px auto;
   padding: 0;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 100%), url("../img/cat-price@2x.jpg");
+  }
+
   @media (min-width: v.$tablet-width) {
     width: 708px;
     background-size: 708px auto;

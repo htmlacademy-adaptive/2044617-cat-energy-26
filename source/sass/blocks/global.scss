@@ -44,5 +44,9 @@
       background-position-x: right;
       z-index: -1;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-cat-desktop@2x.png@2x.png");
+    }
   }
 }
