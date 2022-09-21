@@ -19,7 +19,6 @@
   display: block;
   border: none;
 
-
   @media (min-width: v.$tablet-width) {
     min-width: 768px;
     min-height: 400px;
@@ -89,4 +88,13 @@
   @media (min-width: v.$desktop-width) {
     padding-right: 0;
   }
+}
+
+.main-footer__logo-text:hover svg,
+.main-footer__logo-text:focus svg {
+  opacity: 0.8;
+}
+
+.main-footer__logo-text:active svg {
+  opacity: 0.6;
 }

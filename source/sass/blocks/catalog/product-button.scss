@@ -14,6 +14,7 @@
   margin-top: 10px;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
 
   @media (min-width: v.$tablet-width) {
     padding: 10px 93px;
@@ -23,6 +24,16 @@
   @media (min-width: v.$desktop-width) {
     padding: 10px 53px;
   }
+}
+
+.product-button:hover,
+.product-button:focus {
+  background-color: #5eaa2f;
+}
+
+.product-button:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-button--second {
