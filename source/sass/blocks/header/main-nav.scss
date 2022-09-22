@@ -73,8 +73,22 @@
 }
 
 @media (max-width: v.$mobile-width-only) {
+  .main-nav--opened .site-list {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
   .main-nav--closed .site-list {
     display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-list {
+    display: block;
   }
 }
 
