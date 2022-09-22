@@ -102,7 +102,7 @@ const clean = () => {
 
 // Server
 
-const server = (done) => {
+function server(done) {
   browser.init({
     server: {
       baseDir: 'build'
