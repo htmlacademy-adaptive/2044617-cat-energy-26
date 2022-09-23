@@ -5,6 +5,7 @@
   display: flex;
   margin: 0 auto;
   padding: 20px 20px;
+  justify-content: space-between;
 
   @media (min-width: v.$tablet-width) {
     min-width: 163px;
